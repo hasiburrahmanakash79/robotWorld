@@ -13,7 +13,7 @@ const MyToys = () => {
 
   const { user } = useContext(AuthContext);
 
-  const url = `https://robot-world-server.vercel.app/myToy?email=${user?.email}&type="asc"`;
+  const url = `https://robotworldserver.vercel.app/myToy?email=${user?.email}&type="asc"`;
 
   useEffect(() => {
     fetch(url)
@@ -36,7 +36,7 @@ const MyToys = () => {
       confirmButtonText: "Yes, delete it!",
     }).then((result) => {
       if (result.isConfirmed) {
-        fetch(`https://robot-world-server.vercel.app/allToys/items/${id}`,{
+        fetch(`https://robotworldserver.vercel.app/allToys/items/${id}`,{
           method: 'DELETE'
         })
           .then((res) => res.json())

@@ -11,7 +11,7 @@ const Category = () => {
   const [ai, setAi] = useState(false);
   const [car, setCar] = useState(false);
 
-  const url = "https://robot-world-server.vercel.app/allToys";
+  const url = "https://robotworldserver.vercel.app/allToys";
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())

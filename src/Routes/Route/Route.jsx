@@ -42,12 +42,12 @@ const router = createBrowserRouter([
         {
           path: '/updateToy/:id',
           element: <UpdateToy></UpdateToy>,
-          loader:({params}) => fetch(`https://robot-world-server.vercel.app/singleToy/${params.id}`)
+          loader:({params}) => fetch(`https://robotworldserver.vercel.app/singleToy/${params.id}`)
         },
         {
           path: '/toyDetail/:id',
           element: <PrivateRoute><ToyDetails></ToyDetails></PrivateRoute>,
-          loader: ({params}) => fetch(`https://robot-world-server.vercel.app/singleToy/${params.id}`)
+          loader: ({params}) => fetch(`https://robotworldserver.vercel.app/singleToy/${params.id}`)
         }
       ]
     },

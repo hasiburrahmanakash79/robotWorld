@@ -13,7 +13,7 @@ const AllToys = () => {
   const [seeMore, setSeeMore] = useState(false);
   const [displayCount, setDisplayCount] = useState(20);
 
-  const url = "https://robot-world-server.vercel.app/allToys";
+  const url = "https://robotworldserver.vercel.app/allToys";
   useEffect(() => {
     fetch(url)
       .then((res) => res.json())
